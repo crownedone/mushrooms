@@ -18,6 +18,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import pandas as pd
+from sklearn.decomposition import PCA
+from sklearn.model_selection import train_test_split
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.neighbors import (KNeighborsClassifier,
+                               NeighborhoodComponentsAnalysis)
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import f1_score
+from sklearn.metrics import accuracy_score
+from sklearn import preprocessing as pp
+from sklearn.metrics import classification_report
+from sklearn.pipeline import Pipeline
 
 
 def plotXY(X, Y, legend=True):
